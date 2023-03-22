@@ -1,0 +1,117 @@
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: Poppins, sans-serif;
+    font-size: 19px;
+    margin: 1em 2em;
+}
+
+h2 {
+    align-content: center;
+    font-family: Poppins, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin: 1em 9em;
+    padding: 10px;
+    background-color: cadetblue;
+    color: white;
+    outline: none;
+}
+
+.penjelasan {
+    margin-left: 8em;
+    margin-right: 8em;
+}
+
+/* Form area */
+.card {
+    margin: 2em;
+    margin-left: 9em;
+    margin-right: 9em;
+    border: 1px solid cadetblue;
+    padding: 4em;
+}
+
+/* Text input container style */
+.input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Radio button style */
+input[type="radio"] {
+    cursor: pointer;
+}
+
+/* Icon style */
+.icon {
+    background: cadetblue;
+    color: white;
+    padding: 11px;
+    min-width: 20px;
+    outline: none;
+    text-align: center;
+}
+
+/* Input text box style */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-size: 20px;
+}
+
+.input-field:focus {
+    border: 2px solid cadetblue;
+}
+
+/* Button style */
+.button-container {
+    text-align: center;
+    margin: 2em;
+}
+
+.button-container > button {
+    width: 25%;
+    padding: 10px 15px;
+    border-radius: 7px;
+    font-size: 17px;
+    box-shadow: 2px 1px 5px black;
+}
+
+.button-container > button[type="submit"] {
+    background: cadetblue;
+    color: white;
+    border: solid 1px;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.button-container > button[type="submit"] {
+    opacity: 1;
+}
+
+.card > .hasil {
+    text-align: center;
+    font-size: 30px;
+}
+
+.card > .hasil > h3 {
+    font-size: 70px;
+    color: cadetblue;
+}
+/* Footer style */
+footer {
+    text-align: center;
+}
+
+footer   img {
+    height: 100px;
+    margin: 1em;
+}
+
+.copyright {
+    font-size: 0.8em;
+}

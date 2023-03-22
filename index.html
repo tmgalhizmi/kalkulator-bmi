@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kalkulator BMI</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Import font awesome: cdnjs.com -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+</head>
+
+<body>
+    <!-- Form Input -->
+    <section>
+        <h2>Kalkulator BMI</h2>
+
+        <div class="card">
+            <form action="#">
+                <!-- Gender select -->
+                <div class="input-container">
+                    <input type="radio" name="jenis-kelamin" value="pria" checked="pria">
+                    <label for="pria">Pria</label>
+                    <br>
+                    <input type="radio" name="jenis-kelamin" value="wanita" required>
+                    <label for="wanita">Wanita</label>
+                </div>
+
+                <!-- Body weight input -->
+                <div class="input-container">
+                    <!-- Put 'fa' at the beggining of class name to show it in browser -->
+                    <!-- https://stackoverflow.com/questions/40774234/font-awesome-showing-up-as-squares -->
+                    <i class="fa fa-light fa-pencil icon"></i>
+                    <input class="input-field" type="text" name="berat-badan" placeholder="Berat/kg" required>
+                </div>
+
+                <!-- Body height input -->
+                <div class="input-container">
+                    <i class="fa fa-light fa-pencil icon"></i>
+                    <input class="input-field"  type="text" name="tinggi-badan" placeholder="Tinggi/cm" required>
+                </div>
+
+                <!-- Age input -->
+                <div class="input-container">
+                    <i class="fa fa-light fa-pencil icon"></i>
+                    <input class="input-field"  type="text" name="usia" placeholder="Usia" required>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit">Hitung BMI</button>
+                    <button type="button">Reset</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div class="penjelasan">
+        <h4>Keunggulan fitur</h4>
+        <ol>
+            <li>Menghitung berat badan</li>
+            <li>Menentukan kategori berat badan ideal atau tidak</li>
+            <li>Mempersiapkan program penurunan berat badan</li>
+        </ol>
+
+        <p>
+        Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan
+        pembacaan
+        BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang
+        memenuhi
+        syarat seperti dokter.
+        </p>
+
+        <p>
+        Kalkulator akan memberi Anda gambarat tentan perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh
+        (BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter)
+        atau
+        BMI = kg/m<sup>2</sup>
+        </p>
+    </div>
+
+    <!-- BMI Result -->
+    <section>
+        <h2>Hasil</h2>
+        <div class="card">
+            <div class="hasil">
+                <p>Berat Badan Lebih</p>
+                <h3>24.7</h3>
+                <p>Anda memiliki berat badan berlebih</p>
+            </div>
+        </div>
+        <!-- BMI Form & Result explanation -->
+        <div class="penjelasan">
+            <p>Hasil BMI diantara 23 dan 25</p>
+            <p>Anda berada dalam kategori overweight</p>
+        </div>
+    </section>
+
+    <footer>
+        <h4>Download Aplikasi</h4>
+        <a href="https://play.google.com/store/apps" target="_blank"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play"></a>
+        <a href="https://f-droid.org/packages" target="_blank"><img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid"></a>
+
+        <p class="copyright">Copyright 2023 by T. M. Ghazi Al - Hizmi</p>
+    </footer>
+</body>
+
+</html>
