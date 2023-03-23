@@ -34,7 +34,6 @@ h1 {
 .gender-form, .weight-form, .height-form, .age-form {
     width: 100%;
     margin-bottom: 10px;
-    font-size: 22px;
     display: flex;
     flex-direction: row;
 }
@@ -76,11 +75,11 @@ input:focus {
 }
 
 .button-form > button {
-    width: 25%;
     padding: 10px 15px;
     border-radius: 7px;
     box-shadow: 1px 1px 3px black;
-    font-size: 22px;
+    font-size: 19px;
+    height: 100%;
 }
 
 /* Submit button style */
@@ -138,4 +137,27 @@ footer img {
 .copyright {
     font-size: 0.8em;
     letter-spacing: 0.75px;
+}
+
+/* For device below 992px */
+@media only screen and (max-width: 1200px) {
+h1 {
+    font-size: 23px;
+}
+
+.calculate-form {
+    margin: 3px;
+    padding: 1em;
+}
+
+.button-form > button {
+    width: 100%;
+    font-size: 15px;
+    height: 55%;
+}
+
+.result-box {
+    margin: 3px;
+    flex-direction: column;
+}
 }

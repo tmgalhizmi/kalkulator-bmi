@@ -35,10 +35,12 @@ const showResult = () => {
     bmiHeader.innerText = 'Kelebihan Berat Badan';
     bmiNumber.innerText = indexBMI;
     bmiDescription.innerText = 'Hasil perhitungan menujukkan bahwa Anda sudah memiliki berat badan yang berlebih. Segera rubah pola makan Anda dan jalankan pola hidup sehat dengan rutin belorahga dan mengkonsumsi makanan yang rendah kalori.'
-  } else {
+  } else if (indexBMI >= 30) {
     bmiHeader.innerText = 'Kegemukan (Obesitas)';
     bmiNumber.innerText = indexBMI;
-    bmiDescription.innerText = 'Hasil perhitungan menunjukkan bahwa Anda tergolong obesitas. Hasil ini berdasarkan angka IMT yang lebih dari 30. Yang harus diketahui obesitas memiliki resiko menderita berbagai penyakit serius.<br>Cara menurunkannya dengan mengurangi asupan kalor harian sekitar 300-500 kkal. Cara ini dapat membantu menurunkan berat badan sebesar 0,5-1 kg per minggu. Disamping itu juga perlu untuk melakukan olahraga rutin untuk mendapatkan berat badan ideal. '
+    bmiDescription.innerHTML = 'Hasil perhitungan menunjukkan bahwa Anda tergolong obesitas. Hasil ini berdasarkan angka IMT yang lebih dari 30. Yang harus diketahui obesitas memiliki resiko menderita berbagai penyakit serius.<br>Cara menurunkannya dengan mengurangi asupan kalor harian sekitar 300-500 kkal. Cara ini dapat membantu menurunkan berat badan sebesar 0,5-1 kg per minggu. Disamping itu juga perlu untuk melakukan olahraga rutin untuk mendapatkan berat badan ideal. '
+  } else {
+    bmiNumber.innerText = 0;
   }
 
   // Reset input text after submitting
